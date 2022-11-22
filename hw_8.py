@@ -13,3 +13,10 @@ def line(text):
 
 print(line("the-stealth-warrio"))
 print(line("The_Stealth_Warrior"))
+
+def order(array):
+  words = [(int(l), w) for w in array.split() for l in w if l.isdigit()]
+  words.sort(key=lambda t: t[0])
+  return " ".join(t[1] for t in words)
+
+print(order("is2 Thi1s T4est 3a"))
