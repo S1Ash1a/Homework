@@ -20,3 +20,13 @@ def order(array):
   return " ".join(t[1] for t in words)
 
 print(order("is2 Thi1s T4est 3a"))
+
+
+def palin(n):
+    while True:
+        n += 1
+        if str(n) == str(n)[::-1]:
+            return n
+
+n = int(input("Enter the number: "))
+print(palin(n))
