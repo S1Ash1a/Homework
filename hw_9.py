@@ -11,8 +11,8 @@ class Car:
         self.type = type
         self.year = year
 
-    def sayHi(self):
-        print("Автомобиль заведен " + self.type)
+    def start(self):
+        print("Автомобиль заведен ")
 
     def stop(self):
         print("Автомобиль заглушен")
@@ -21,7 +21,7 @@ class Car:
         return f"{self.color}, {self.type}, {self.year}"
 
 
-my_car = Car(color="Black", type="Audi", year="1990")
-my_car.sayHi()
+my_car = Car(color="Black", type="Automat", year="1990")
+my_car.start()
 my_car.stop()
 print(my_car)
