@@ -1,4 +1,5 @@
 # [1,2,'a','b'] == [1, 2, 3]    -> 1 + 4 + 9 = 14
+
 from typing import Tuple, List, Any
 
 

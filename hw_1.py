@@ -19,3 +19,6 @@ perimetr_restangle = side * 4
 
 print("square_restangle :", square_restangle)
 print("perimetr_restangle :", perimetr_restangle)
+
+
+
