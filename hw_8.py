@@ -16,6 +16,7 @@ def next_palin(n):
 n = int(input("Введите число: "))
 print(next_palin(n))
 
+
 def order(array):
     words = [(int(l), w) for w in array.split() for l in w if l.isdigit()]
     words.sort(key=lambda t: t[0])
