@@ -1,7 +1,7 @@
 
 class Triangle:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, array):
+        self.array = array
 
     def new_triangle(self, a, b, c):
         if a + b > c \
@@ -12,5 +12,5 @@ class Triangle:
             print("Треугольник не существует")
 
 
-triangle_1 = Triangle("triangle_1")
+triangle_1 = Triangle("a, b, c")
 triangle_1.new_triangle(a=3, b=2, c=4)
