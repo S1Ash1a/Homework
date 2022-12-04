@@ -2,7 +2,7 @@
 class Triangle:
     def __init__(self, array):
         self.array = array
-
+        array.sort()
     def new_triangle(self):
         a = self.array[0]
         b = self.array[1]
@@ -16,5 +16,5 @@ class Triangle:
             print("Треугольник не существует")
 
 
-triangle_1 = Triangle([3, 4, 5])
+triangle_1 = Triangle([9, 4, 6])
 triangle_1.new_triangle()
