@@ -1,5 +1,4 @@
 
-
 class Triangle:
     def __init__(self, name, side_a, side_b, side_c):
         self.side_a = side_a
