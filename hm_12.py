@@ -8,6 +8,7 @@ class Soda:
         else:
             print(f"Обычная газировка")
 
+
 soda_1 = Soda("Pepsi")
 soda_2 = Soda()
 soda_3 = Soda("Orange")
