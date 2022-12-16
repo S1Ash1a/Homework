@@ -2,7 +2,6 @@ from triangle import triangle_perimetr, triangle_square
 from circle import circle_perimetr, circle_square
 from rentangle import rentangle_perimetr, rentangle_square
 
-
 def triangle_result():
     return {"triangle": {"square": triangle_square(2, 6), "perimetr": triangle_perimetr(2, 6 ,8)}}
 

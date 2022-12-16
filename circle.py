@@ -7,4 +7,3 @@ def circle_square(radius):
 def circle_perimetr(radius):
     p = 2 * pi * radius
     return p
-
