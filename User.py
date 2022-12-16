@@ -7,7 +7,6 @@ class User:
         self.profession = profession
 
 
-
     def new_brith_year(self):
         britn_year = 2022 - self.age
         return britn_year
