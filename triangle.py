@@ -6,5 +6,3 @@ def triangle_square(a, b):
     s = (a * b) / 2
     return s
 
-
-
