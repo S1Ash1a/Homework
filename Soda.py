@@ -14,6 +14,3 @@ soda_3 = Soda("Orange")
 soda_1.show_my_drink()
 soda_2.show_my_drink()
 soda_3.show_my_drink()
-
-
-
