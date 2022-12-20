@@ -27,31 +27,15 @@ class Car:
 
 
     @staticmethod
-    def country(city):
-        if city == "BMW":
-            return "Germani"
-        elif city == "Vaz":
-            return "Russia"
-        elif city == "VolVO":
-            return 'China'
+    def get_country(brand):
+        if brand in ["BMW", "AUDI", "MERCEDES"]:
+            return "Germany"
         else:
-            return f"City not made"
-
-    def country_instance(self):
-        if self.name == "BMW":
-            return "Germani"
-        elif self.name == "VAZ":
-            return "Russia"
-        elif self.name == "VOLVO":
-            return 'China'
-        else:
-            return f"City not made"
-
+            return "Unknown country"
 
 
     def usd_price(self):
-        usd = self.price / 2.5
-        return  usd
+        return  f"Price: {self.price} USD ~ {self.price * 2.5} BYN"
 
     def __str__(self):
         return f"name : {self.name}, Age : {self.age}, Milage : {self.__milage}, price : {self.price} руб,"
@@ -60,25 +44,26 @@ class Car:
         return self.name == other.name and self.age == other.age
 
 
-
-
-
-
-
-
 avto = Car(milage=20000, name='BMW', age=2010, price=15000)
-avto_2 = Car(milage=10000, name='AUDI', age=2020, price=50000)
-avto_3 = Car(milage=150000, name='VAZ', age=1995, price=5000)
-avto_4 = Car(milage=100000, name='VOLVO', age=2000, price=30000)
+avto_2 = Car(milage=10000, name='VOLVO', age=2020, price=50000)
 
-
+print(avto)
 print(avto == avto_2)
 print(Car.get_count())
-
+print(avto.usd_price())
+print(avto.get_country(avto.name))
+print(avto.milage)
 avto.milage = 50000
-print(avto.milage, avto.__dict__)
+print(avto.milage)
 
-print(avto, 'Цена в долларах :', avto.usd_price(), 'Maden in :', avto.country_instance())
-print(avto_2, 'Цена в долларах :', avto_2.usd_price(), 'Maden in :', avto_2.country_instance())
-print(avto_3, 'Цена в долларах :', avto_3.usd_price(), 'Maden in :', avto_3.country_instance())
-print(avto_4, 'Цена в долларах :', avto_4.usd_price(), 'Maden in :', avto_4.country_instance())
+
+class Chevrolet(Car):
+    __get_count = 0
+
+    def get_county(self):
+        return "USA"
+
+car_chevrole = Chevrolet(10000, "TAHO", 2021, 40000)
+
+print(car_chevrole.get_county())
+print(car_chevrole.get_count())
