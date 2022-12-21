@@ -31,3 +31,4 @@ class Snow:
 squantity_1 = Snow(200)
 print(squantity_1.makeSnow(10))
 
+
