@@ -20,11 +20,11 @@ class Snow:
 
     def makeSnow(self, quantity_of_snowflakes):
         string_snowflakes = ""
-        quantity_of_row = int(self.quantity) // quantity_of_snowflakes
+        quantity_of_row = self.quantity // quantity_of_snowflakes
         for i in range(quantity_of_row):
             string_snowflakes += ("*" * quantity_of_snowflakes)
             string_snowflakes += "\n"
-        rest_of_snowflakes = (int(self.quantity) - quantity_of_row * quantity_of_snowflakes)
+        rest_of_snowflakes = (self.quantity - quantity_of_row * quantity_of_snowflakes)
         string_snowflakes += "*" * rest_of_snowflakes
         return string_snowflakes
 
