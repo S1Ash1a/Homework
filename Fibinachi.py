@@ -1,16 +1,5 @@
 import sys
 
-#Генератор функции Факториала
-def factorial(n):
-    res = 1
-    while n != 0:
-        res *= n
-        n -= 1
-    yield res
-for x in factorial(5):
-    print(x)
-print(factorial(5))
-
 #Напишите функцию, которая выводит последовательность (из первых 100 значений)
 # Фибоначчи с помощью генератора
 
