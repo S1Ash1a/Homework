@@ -25,6 +25,7 @@ class Cat:
         return Cat.mewo_counter
 
 
+ 
 cat_1 = Cat('Barsik')
 print(cat_1.to_answer())
 print(cat_1.to_answer())
